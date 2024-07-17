@@ -4,7 +4,7 @@ public class Main{
     public static void main(String[] args) {
 
 
-        Media media1 = new Media();
+                Media media1 = new Media();
 
         Book book1 = new Book();
 
@@ -39,7 +39,7 @@ public class Main{
         Store store2 = new Store(u,m);
 
         AcademicBook academicBook2 =
-        new AcademicBook("How can we overcome on the sad","Gamal","1299o",200,r,"Master Thesis");
+                new AcademicBook("How can we overcome on the sad","Gamal","1299o",200,r,"Master Thesis");
 
         Novel novel2 = new Novel("1984","gorge oriel","1212qqa",30,r,"Corrupt city");
 
@@ -56,27 +56,92 @@ public class Main{
         book3.setPrice(46);
         book3.setStock();
 
+        Music music3 = new Music();
+        music3.setTitle("sem sem");
+        music3.setAuteur("Hanan");
+        music3.setISBN("12aaa1");
+        music3.setPrice(400);
+        music3.setArtist(3);
+
+        Movie movie3 = new Movie();
+        movie3.setTitle("The garden");
+        movie3.setAuteur("Jon");
+        movie3.setISBN("gg4728");
+        movie3.setPrice(230);
+        movie3.setDuration(4);
+
+        Review review3 = new Review();
+        review3.setUsername("Dalaly11");
+        review3.setRating(2);
+        review3.setComment("Very bad");
+
+        User user3 = new User();
+        user3.setUsername("Yara");
+        user3.setEmail("yarayara01@gmail.com");
+//        user3.setPurchaseMediaList(media2);
+//        user3.setShoppingCart(media2);
+
+        Store store3 = new Store();
+//        store3.setUsers(user2);
+//        store3.searchBook("The garden");
+//        store3.setMedias(media3);
+//        store3.addUser(user1);
+
+        AcademicBook academicBook3 = new AcademicBook();
+        academicBook3.setTitle("The garden");
+        academicBook3.setAuteur("Jon");
+        academicBook3.setISBN("gg4728");
+        academicBook3.setPrice(230);
+//        academicBook3.setReviews(1);
+        academicBook3.setSubject("Peo");
+        academicBook3.setStock();
+
+        Novel novel3 = new Novel();
+        novel3.setTitle("The tree");
+        novel3.setAuteur("Kamil");
+        novel3.setISBN("234gsy");
+        novel3.setPrice(310);
+//        novel3.setReviews(2);
+        novel3.setGenre("nothing");
+        novel3.setStock();
+
         System.out.println(media1.toString());
         System.out.println(media2.toString());
         System.out.println(media3.toString());
+        System.out.println(media2.getTitle());
 
         System.out.println(book1.toString());
         System.out.println(book2.toString());
+        System.out.println(book3.toString());
         System.out.println(book3.getStock());
 
         System.out.println(movie1.toString());
         System.out.println(movie2.toString());
+        System.out.println(movie3.toString());
+        System.out.println(movie2.getDuration());
         System.out.println(academicBook1.toString());
         System.out.println(academicBook2.toString());
+        System.out.println(academicBook3.toString());
+        System.out.println(academicBook1.getISBN());
         System.out.println(novel1.toString());
+        System.out.println(novel2.toString());
+        System.out.println(novel3.toString());
         System.out.println(novel2.getISBN());
         System.out.println(music1.getPrice());
+        System.out.println(music1.toString());
         System.out.println(music2.toString());
+        System.out.println(music2.toString());
+        System.out.println(music2.getPrice());
         System.out.println(review1.toString());
         System.out.println(review2.toString());
+        System.out.println(review3.toString());
+        System.out.println(review3.getComment());
         System.out.println(store1.toString());
         System.out.println(store2.toString());
+        System.out.println(store3.toString());
         System.out.println(user1.toString());
+        System.out.println(user2.toString());
+        System.out.println(user3.toString());
         System.out.println(user2.getEmail());
     }
 }
