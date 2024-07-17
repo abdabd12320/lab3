@@ -66,4 +66,16 @@ public class User {
         purchaseMediaList.add(new Media(m.getTitle(),m.getAuteur(),m.getISBN(),m.getPrice()));
         b.restock(-1);
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "username='" + username + '\'' +
+                ", email='" + email + '\'' +
+                ", purchaseMediaList=" + purchaseMediaList +
+                ", shoppingCart=" + shoppingCart +
+                ", m=" + m +
+                ", b=" + b +
+                '}';
+    }
 }
