@@ -60,4 +60,12 @@ public class Store {
         }
         return null;
     }
+
+    @Override
+    public String toString() {
+        return "Store{" +
+                "users=" + users +
+                ", medias=" + medias +
+                '}';
+    }
 }
